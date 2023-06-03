@@ -1,0 +1,60 @@
+.features {
+    
+    &__container {
+        padding: 7rem 0 5rem;
+        position: relative;
+
+        @media screen and (min-width: 1280px)  {
+            padding: 11rem 0 5rem;
+        }
+    }
+
+    &__decorator {
+        position: absolute;
+        top: 0;
+
+        &--left {
+            left: -129px;
+        }
+
+        &--right {
+            right: -129px;
+        }
+    }
+
+    &__title {
+        font-size: var(--fs-display-md);
+        line-height: var(--lh-display-md);
+        font-weight: var(--fw-extra-bold);
+
+        @media screen and (min-width: 768px)  {
+            padding-right: 10rem;
+        }
+
+        @media screen and (min-width: 992px)  {
+            padding-right: 25rem;
+        }
+
+        @media screen and (min-width: 1280px)  {
+            padding-right: 35rem;
+            font-size: var(--fs-display-lg);
+            line-height: var(--lh-display-lg);
+        }
+
+    }
+
+    &__grid {
+        margin-top: 3rem;
+        display: grid;
+        gap: 2rem;
+
+        @media screen and (min-width: 576px) {
+            gap: 4rem;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        @media screen and (min-width: 1280px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }   
+}

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    // Font Family
+    --ff-manrope: 'Manrope', sans-serif;
+
+    // Colors
+    --clr-primary-800: hsl(242, 53%, 43%);
+    --clr-primary-600: hsl(245, 46%, 50%);
+    --clr-secondary-800: hsl(13, 100%, 68%);
+    --clr-secondary-600: hsl(13, 92%, 70%);
+    --clr-gray-800: hsl(0, 0%, 47%);
+    --clr-gray-700: hsl(218, 14%, 89%);
+    --clr-gray-600: hsl(214, 100%, 95%);
+    --clr-dark: hsl(237, 29%, 15%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-black: hsl(0, 0%, 0%);
+
+    // Font Sizes
+    --fs-display-2xl: 4rem;
+    --fs-display-xl: 3.375rem;
+    --fs-display-lg: 2.625rem;
+    --fs-display-md: 2.125rem;
+    --fs-display-sm: 1.5rem;
+    --fs-display-xs: 1.125rem;
+    --fs-body-xl: 1.25rem;
+    --fs-body-lg: 1.125rem;
+    --fs-body-md: 1rem;
+    --fs-body-sm: 0.875rem;
+    --fs-body-xs: 0.75rem;
+
+    // Line Heights
+    --lh-display-2xl: 4.5rem;
+    --lh-display-xl: 4rem;
+    --lh-display-lg: 3.5rem;
+    --lh-display-md: 2.8125rem;
+    --lh-display-sm: 2.25rem;
+    --lh-display-xs: 1.5rem;
+    --lh-body-xl: 2rem;
+    --lh-body-lg: 1.75rem;
+    --lh-body-md: 1.875rem;
+    --lh-body-sm: 1.5rem;
+    --lh-body-xs: 1rem;
+
+    // Font Weights
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-extra-bold: 800;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font: inherit;
+}
+
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+html,
+html:focus-within {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+html,
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.618;
+    font-family: var(--ff-manrope);
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    font-size: var(--fs-body-md);
+    line-height: var(--lh-body-md);
+    font-weight: var(--fw-medium);
+
+    @media screen and (min-width: 1280px)  {
+        font-size: var(--fs-body-lg);
+        line-height: var(--lh-body-lg);
+    }
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+  
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+button {
+    cursor: pointer;
+    outline: none;
+    border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html,
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+  
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

@@ -1,0 +1,38 @@
+.feature {
+
+    &:nth-child(3) {
+    
+        .feature__icon {
+            width: 32px;
+        }
+
+        .feature__title {
+            margin-top: 1.8125rem;
+        }
+
+    }
+
+    &__icon {
+        width: 46px;
+    }
+
+    &__title {
+        margin-top: 1rem;
+        font-weight: var(--fw-bold);
+        font-size: var(--fs-body-lg);
+        line-height: var(--lh-body-lg);
+
+        @media screen and (min-width: 1280px) {
+            font-size: var(--fs-body-xl);
+            line-height: var(--lh-body-xl);
+        }
+
+    }
+
+    &__text {
+        margin-top: 1rem;
+        font-size: var(--fs-body-sm);
+        line-height: var(--lh-body-sm);
+    }
+
+}

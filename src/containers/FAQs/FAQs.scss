@@ -1,0 +1,71 @@
+.faqs {
+
+    &__container {
+        padding: 7rem 0 6rem;
+        display: grid;
+        gap: 4rem;
+
+        @media screen and (min-width: 992px)  {
+            padding: 14rem 0 12rem;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 2rem;
+        }
+
+        @media screen and (min-width: 1280px)  {
+            gap: 6rem;
+        }
+
+    }
+
+    &__info {
+        @media screen and (min-width: 992px) {
+            margin-bottom: 1.75rem;
+        }
+    }
+
+    &__title {
+        font-size: var(--fs-display-md);
+        line-height: var(--lh-display-md);
+        font-weight: var(--fw-extra-bold);
+
+        @media screen and (min-width: 1280px)  {
+            font-size: var(--fs-display-xl);
+            line-height: var(--lh-display-xl);
+        }
+    }
+
+    &__text {
+        margin-top: 1.5rem;
+        font-weight: var(--fw-regular);
+        color: var(--clr-dark);
+
+        @media screen and (min-width: 992px)  {
+            margin-top: 3.75rem;
+            padding-right: 2.5rem;
+        }
+
+        @media screen and (min-width: 1280px)  {
+            padding-right: 5rem;
+        }
+
+    }
+
+    &__btn {
+        margin-top: 1.5rem;
+        background-color: transparent;
+        color: var(--clr-primary-600);
+        gap: .625rem;
+        padding: 0;
+
+        @media screen and (min-width: 992px)  {
+            margin-top: 2rem;
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: var(--clr-primary-800);
+        }
+    }
+
+}

@@ -1,0 +1,31 @@
+.companies {
+    margin-top: 4.25rem;
+    padding: 3.5rem 0;
+    border-top: 1px solid #E3E6E9;
+    border-bottom: 1px solid #E3E6E9;
+
+    @media screen and (min-width: 1280px)  {
+        padding: 4.5rem 0;
+    }
+
+    &__container {
+        @media screen and (min-width: 1280px) {
+            max-width: 1260px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: var(--fw-semi-bold);
+    }
+
+    &__grid {
+        margin-top: 4.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+}

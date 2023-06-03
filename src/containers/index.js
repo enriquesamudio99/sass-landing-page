@@ -1,0 +1,9 @@
+export { default as Header } from './Header/Header';
+export { default as Companies } from './Companies/Companies';
+export { default as Features } from './Features/Features';
+export { default as ActiveFollowers } from './ActiveFollowers/ActiveFollowers';
+export { default as ActiveUsers } from './ActiveUsers/ActiveUsers';
+export { default as Testimonials } from './Testimonials/Testimonials';
+export { default as FAQs } from './FAQs/FAQs';
+export { default as CTA } from './CTA/CTA';
+export { default as Footer } from './Footer/Footer';

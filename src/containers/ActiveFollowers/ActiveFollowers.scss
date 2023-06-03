@@ -1,0 +1,57 @@
+.active-followers {
+
+    &__container {
+        margin-top: 2rem;
+        display: grid;
+        gap: 5rem;
+
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+    }
+
+    &__title {
+        font-size: var(--fs-display-md);
+        line-height: var(--lh-display-md);
+        font-weight: var(--fw-extra-bold);
+
+        @media screen and (min-width: 576px) {
+            padding-right: 10rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            padding-right: 0;
+        }
+
+        @media screen and (min-width: 992px) {
+            padding-right: 5rem;
+        }
+
+        @media screen and (min-width: 1280px)  {
+            font-size: var(--fs-display-xl);
+            line-height: var(--lh-display-xl);
+        }
+    }
+
+    &__text {
+        margin-top: 1.5rem;
+
+        @media screen and (min-width: 1280px) {
+            padding-right: 2rem;
+        }
+    }
+
+    &__btn-wrapper {
+        width: max-content;
+        margin-top: 2.5rem;
+        position: relative;
+    }
+
+    &__btn-line {
+        position: absolute;
+        right: -130px;
+        bottom: -2px;
+    }
+
+}

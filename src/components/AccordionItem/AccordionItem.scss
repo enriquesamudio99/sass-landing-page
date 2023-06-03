@@ -1,0 +1,41 @@
+.accordion-item {
+    border-bottom: 2px solid #8896A6;
+
+    &__header {
+        padding-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    &__title {
+        font-size: var(--fs-body-md);
+        line-height: var(--lh-body-md);
+        font-weight: var(--fw-bold);
+        color: var(--clr-dark);
+
+        @media screen and (min-width: 1280px)  {
+            font-size: var(--fs-body-lg);
+            line-height: var(--lh-body-lg);
+        }
+    }
+
+    &__data {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        transition: height .3s ease;
+
+        &--show {
+            height: auto;
+        }
+
+        &-text {
+            font-weight: var(--fw-regular);
+            color: var(--clr-dark);
+            padding-bottom: 1.25rem;
+        }
+    }
+
+}

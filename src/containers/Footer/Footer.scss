@@ -1,0 +1,191 @@
+.footer {
+    background-color: var(--clr-dark);
+
+    &__container {
+        padding-top: 6rem;
+        padding-bottom: 2.5rem;
+
+        @media screen and (min-width: 1280px) {
+            padding-top: 8rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 2.5rem;
+        padding-bottom: 5.625rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        @media screen and (min-width: 576px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+    }
+
+    &__title {
+        font-size: var(--fs-display-md);
+        line-height: var(--lh-display-md);
+        letter-spacing: -0.002rem;
+        font-weight: var(--fw-regular);
+        color: var(--clr-white);
+
+        &-span {
+            display: block;
+        }
+
+        @media screen and (min-width: 576px) {
+            font-size: var(--fs-display-lg);
+            line-height: var(--lh-display-lg);
+        }
+
+        @media screen and (min-width: 1280px) {
+            font-size: var(--fs-display-xl);
+            line-height: var(--lh-display-xl);
+        }
+    }
+
+    &__btn {
+        font-weight: var(--fw-semi-bold);
+        border-radius: .3125rem;
+        padding: .75rem 1.875rem;
+        column-gap: .75rem;
+        background-color: var(--clr-secondary-600);
+        color: var(--clr-dark);
+        
+        &:hover {
+            background-color: var(--clr-secondary-800);
+        }
+    }
+
+    &__data {
+        padding-top: 2.5rem;
+        padding-bottom: 6.5rem;
+        border-top: 1px solid #404444;
+        border-bottom: 1px solid #404444;
+        
+        &-container {
+            display: grid;
+            row-gap: 3rem;
+
+            @media screen and (min-width: 1280px) {
+                grid-template-columns: 520px 1fr;
+                column-gap: 7.25rem;
+                row-gap: 0;
+            }
+        }
+
+    }
+
+    &__brand {
+        display: inline-block;
+        margin-top: .5rem;
+        font-weight: var(--fw-bold);
+        color: var(--clr-white);
+        font-size: var(--fs-body-xl);
+        line-height: var(--lh-body-xl);
+    }
+
+    &__info-text {
+        margin-top: 1rem;
+        color: var(--clr-white);
+        font-size: var(--fs-body-md);
+        line-height: var(--lh-body-md);
+        font-weight: var(--fw-regular);
+        opacity: .4;
+
+        @media screen and (min-width: 768px) {
+            padding-right: 15rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            padding-right: 28rem;
+        }
+
+        @media screen and (min-width: 1280px) {
+            padding-right: 0;
+        }
+    }
+
+    &__links {
+        display: grid;
+        row-gap: 3rem;
+        font-size: var(--fs-body-sm);
+        line-height: var(--lh-body-sm);
+        
+        @media screen and (min-width: 576px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 0;
+            column-gap: 3rem;
+        }
+
+        @media screen and (min-width: 992px) {
+            column-gap: 3.5rem;
+        }
+
+        &-title {
+            font-size: var(--fs-body-xl);
+            line-height: var(--lh-body-xl);
+            font-weight: var(--fw-bold);
+            color: var(--clr-white);
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    &__link {
+        display: block;
+        margin-bottom: .75rem;
+        color: var(--clr-white);
+        font-size: var(--fs-body-md);
+        line-height: var(--lh-body-md);
+        font-weight: var(--fw-regular);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__copy {
+        padding-top: 2.5rem;
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 2.25rem;
+
+            @media screen and (min-width: 576px) {
+                flex-direction: row;
+                justify-content: space-between;
+                row-gap: 0;
+            }
+        }
+        
+        &-text {
+            text-align: center;
+            font-size: var(--fs-body-xs);
+            line-height: var(--lh-body-xs);
+            font-weight: var(--fw-regular);
+            color: var(--clr-white);
+
+            &-span {
+                font-weight: var(--fw-bold);
+            }
+        }
+
+    }
+
+}

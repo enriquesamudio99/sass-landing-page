@@ -1,0 +1,133 @@
+.hero {
+
+    &__container {
+        padding-top: 6rem;
+        display: grid;
+        row-gap: 4rem;
+
+        @media screen and (min-width: 992px)  {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+
+        @media screen and (min-width: 1280px)  {
+            padding-top: 7rem;
+            grid-template-columns: 1fr;
+            position: relative;
+        }
+    }
+
+    &__data {
+        @media screen and (min-width: 1280px)  {
+            width: 523px;
+        }
+    }
+
+    &__img-wrapper {
+        @media screen and (min-width: 1280px)  {
+            position: absolute;
+            top: 3rem;
+            right: -8.5rem;
+        }
+    }
+
+    &__img {
+        @media screen and (min-width: 768px)  {
+            width: 650px;
+            margin: 0 auto;
+        }
+
+        @media screen and (min-width: 992px)  {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 1280px)  {
+            width: 889px;
+        }
+    }
+
+    &__title {
+        font-size: var(--fs-display-lg);
+        line-height: var(--lh-display-lg);
+        font-weight: var(--fw-extra-bold);
+
+        @media screen and (min-width: 768px)  {
+            padding-right: 12rem;
+        }
+
+        @media screen and (min-width: 992px)  {
+            padding-right: 0;
+        }
+
+        @media screen and (min-width: 1280px)  {
+            font-size: var(--fs-display-2xl);
+            line-height: var(--lh-display-2xl);
+        }
+    }
+
+    &__description {
+        margin-top: 1.25rem;
+
+        @media screen and (min-width: 768px)  {
+            padding-right: 12rem;
+        }
+
+        @media screen and (min-width: 992px)  {
+            padding-right: 0;
+        }
+
+        @media screen and (min-width: 1280px)  {
+            letter-spacing: 0.01rem;
+        }
+    }
+
+    &__btn {
+        margin-top: 1.5rem;
+        font-weight: var(--fw-bold);
+        border-radius: .3125rem;
+    }
+
+    &__people {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: .75rem;
+        align-items: flex-start;
+
+        @media screen and (min-width: 1280px)  {
+            margin-top: 3rem;
+        }
+
+        &-img {
+            width: 160px;
+
+            @media screen and (min-width: 1280px)  {
+                width: 224px;
+            }
+        }
+
+        &-text {
+            font-size: var(--fs-body-sm);
+            line-height: var(--lh-body-sm);
+
+            @media screen and (min-width: 576px)  {
+                padding-right: 15rem;
+            }
+
+            @media screen and (min-width: 768px)  {
+                padding-right: 25rem;
+            }
+
+            @media screen and (min-width: 992px)  {
+                padding-right: 8rem;
+                font-size: var(--fs-body-md);
+                line-height: var(--lh-body-md);
+            }
+
+            @media screen and (min-width: 1280px)  {
+                padding-right: 12rem;
+            }
+        }
+    }
+
+}

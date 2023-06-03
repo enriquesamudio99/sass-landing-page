@@ -1,0 +1,37 @@
+.testimonials {
+
+    &__container {
+        padding-top: 3rem;
+    }
+
+    &__subtitle {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--clr-primary-800);
+        font-weight: var(--fw-extra-bold);
+    }
+
+    &__title {
+        text-align: center;
+        margin-top: 1.5rem;
+        font-size: var(--fs-display-md);
+        line-height: var(--lh-display-md);
+        font-weight: var(--fw-extra-bold);
+
+        @media screen and (min-width: 1280px)  {
+            font-size: var(--fs-display-xl);
+            line-height: var(--lh-display-xl);
+        }
+    }
+
+    &__swiper {
+        margin-top: 2.25rem;
+    }
+
+}
+
+.swiper-slide {
+    padding-top: 1.625rem;
+    padding-bottom: .75rem;
+}
